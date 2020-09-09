@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-user-login',
   templateUrl: './user-login.component.html',
-  styleUrls: ['./user-login.component.scss']
+  styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent implements OnInit {
 
@@ -26,7 +26,7 @@ export class UserLoginComponent implements OnInit {
       this.alertify.success('Login Successful');
       this.router.navigate(['/']);
     } else {
-      this.alertify.error('User Id or Password is wrong');
+      this.alertify.error('User id or password is wrong');
     }
   }
 
