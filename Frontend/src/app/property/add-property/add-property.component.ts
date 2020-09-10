@@ -11,7 +11,7 @@ import { AlertifyService } from 'src/app/services/alertify.service';
 @Component({
   selector: 'app-add-property',
   templateUrl: './add-property.component.html',
-  styleUrls: ['./add-property.component.css']
+  styleUrls: ['./add-property.component.scss']
 })
 export class AddPropertyComponent implements OnInit {
   // @ViewChild('Form') addPropertyForm: NgForm;
@@ -216,6 +216,7 @@ export class AddPropertyComponent implements OnInit {
   }
 
   mapProperty(): void {
+    this.property.Id = this.housingService.newPropID();
     this.property.SellRent = +this.SellRent.value;
     this.property.BHK = this.BHK.value;
     this.property.PType = this.PType.value;
