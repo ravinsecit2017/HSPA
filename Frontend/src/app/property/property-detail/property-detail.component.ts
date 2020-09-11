@@ -15,6 +15,7 @@ export class PropertyDetailComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
+
   constructor(private route: ActivatedRoute,
               private router: Router,
               private housingService: HousingService) { }
