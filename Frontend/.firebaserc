@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "hspa-angular10"
+  },
+  "targets": {
+    "hspa-angular10": {
+      "hosting": {
+        "my-first-app": [
+          "hspa-angular10"
+        ]
+      }
+    }
+  }
+}
